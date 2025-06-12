@@ -1,0 +1,295 @@
+/* .platforms-inner{
+  position: relative;
+  max-width: 80%;
+  width: 80%;
+}
+
+.platforms-inner:before {
+  left: 0;
+}
+
+.platforms-inner:after, .platforms-inner:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 20px;
+  height: 100%;
+  z-index: 1;
+  background: transparent;
+}
+
+.platforms-inner:after {
+  right: 0;
+}
+.platforms-inner:after, .platforms-inner:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 20px;
+  height: 100%;
+  z-index: 1;
+  background: transparent;
+}
+
+.platforms-list {
+  width: 4000px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transform: translate3d(0, 0, 0);
+  animation: platformsSlideshow 120s linear infinite;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+.page-app-template-hero-platforms .platforms-list-item {
+  filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(174deg) brightness(111%) contrast(101%);
+  opacity: 0.6;
+}
+.platforms-list-item {
+  display: inline-flex;
+  justify-content: center;
+  opacity: 0.2;
+  filter: brightness(0.5) grayscale(1);
+}
+.page-app-template-hero-platforms .platforms-list-item img {
+  filter: grayscale(1) brightness(0) saturate(100%);
+}
+
+
+@keyframes platformsSlideshow {
+  100% {
+    transform: translateX(-3000px);
+  }
+} */
+
+/* .App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.btn-outline-success {
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.btn-outline-success:hover {
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.btn-success {
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+@media (max-width: 767px) {
+	.carousel-inner .carousel-item>div {
+		display: none;
+	}
+
+	.carousel-inner .carousel-item>div:first-child {
+		display: block;
+	}
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+	display: flex;
+}
+
+@media (min-width: 768px) {
+
+	.carousel-inner .carousel-item-end.active,
+	.carousel-inner .carousel-item-next {
+		transform: translateX(25%);
+	}
+
+	.carousel-inner .carousel-item-start.active,
+	.carousel-inner .carousel-item-prev {
+		transform: translateX(-25%);
+	}
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+	transform: translateX(0);
+}
+
+div.gallery {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+
+}
+
+div.gallery:hover {
+	border: 1px solid #777;
+}
+
+div.gallery img {
+	width: 100%;
+	height: auto;
+	padding: 15px;
+}
+
+div.desc {
+	padding: 15px;
+	text-align: center;
+	text-decoration: none !important;
+}
+
+div.desc .fw-bold {
+	text-decoration: none !important;
+
+}
+
+.no-underline {
+	text-decoration: none !important;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+.desc {
+	text-decoration: none;
+}
+
+.responsive {
+	padding: 0 10px;
+	float: left;
+	width: 24.99999%;
+	text-decoration: none !important;
+}
+
+@media only screen and (max-width: 700px) {
+	.responsive {
+		width: 49.99999%;
+		margin: 6px 0;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.responsive {
+		width: 100%;
+	}
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.slider {
+	position: absolute;
+	width: 100%;
+	top: calc(50% - 194.5px);
+	overflow: hidden;
+}
+
+.slider .slider-row {
+	width: 2956px;
+	height: 194.5px;
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/111863/ubiquity-summit-web-01.png);
+	background-size: 2956px 194.5px;
+	animation: slide 50s linear infinite;
+}
+
+@keyframes slide {
+	from {
+		background-position-x: 0;
+	}
+
+	to {
+		background-position-x: -2956px;
+	}
+} */
+
+.wiper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.wiper-wrapper {
+    display: flex;
+
+}
+
+.wiper-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.wiper-item {
+    flex: 0 0 auto;
+	/* width: 400px; */
+
+}
+
+.wiper__image{
+	width: 800px;
+}
+
+
+.wiper-item.active {
+    animation: slideRightToLeft 3s linear infinite; /* Adjust animation duration as needed */
+	border:5px solid green;
+	
+}
+
+/* @keyframes slideRightToLeft {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+} */
+
