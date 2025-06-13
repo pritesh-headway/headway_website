@@ -39,7 +39,7 @@ const AboutUs = ({ isVisible, titleRef }) => {
                     />
                 </div>
 
-                <div className="flex justify-center items-center px-16 py-12 w-full bg-orange-50 max-md:px-5 max-md:mt-10 max-md:max-w-full max-md:py-0">
+                <div className="flex justify-center items-center px-16 py-12 w-full bg-[#fff8F5] max-md:px-5 max-md:mt-10 max-md:max-w-full max-md:py-0">
                     <div className="my-6 max-w-full w-[1296px]">
                         <div className="flex gap-5 max-lg:flex-col max-lg:gap-0 max-md: justify-between">
                             <div className="flex flex-col w-[40%]  max-md:ml-0 max-lg:w-full  z-10">

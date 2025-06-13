@@ -26,7 +26,7 @@ const Founder = ({isVisible,titleRef}) => {
 
   return (
     <section ref={titleRef}>
-      <div className="flex justify-center items-center px-16 py-12 w-full text-5xl font-medium bg-orange-50 max-md:px-5 max-sm:py-0 max-md:max-w-full max-md:text-4xl">
+      <div className="flex justify-center items-center px-16 py-12 w-full text-5xl font-medium max-md:px-5 max-sm:py-0 max-md:max-w-full max-md:text-4xl">
         <div className="flex flex-col my-6 max-w-full w-[1296px] max-md:text-4xl">
           <div
             // className="max-md:max-w-full max-md:text-4xl"

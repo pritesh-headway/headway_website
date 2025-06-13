@@ -122,7 +122,8 @@ export const fetchWithFormDataToken = async (endpoint, formdata, token = null) =
     try {
         // const headers = { 'Authorization': `Bearer ${token}` }  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vNTQuMTk2LjIzNC43Ni9hcGkvbG9naW4iLCJpYXQiOjE3MTIxNDc3NjcsImV4cCI6MTcxMjIzNDE2NywibmJmIjoxNzEyMTQ3NzY3LCJqdGkiOiJVSXN6S3pyUVROdTY3YU5nIiwic3ViIjoiMzAiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.lixXeNsAMh3812GU5-Pwpwj5YCSxblaou2V3Iomm1iY
         // const headers = { 'Authorization': `Bearer ${token}` } 
-         const headers = token ? { token: token } : {}; 
+        //  const headers = token ? { token: token } : {}; 
+        const headers = token ? { 'Authorization': `Bearer  ${token}` } : {};
         
 
         const requestOptions = {

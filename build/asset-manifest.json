@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc2a24db.css",
-    "main.js": "/static/js/main.8b00a7c5.js",
+    "main.css": "/static/css/main.5bf71483.css",
+    "main.js": "/static/js/main.e31899bf.js",
     "static/js/453.150ca95a.chunk.js": "/static/js/453.150ca95a.chunk.js",
+    "static/media/home_new_founder_section.png": "/static/media/home_new_founder_section.6a1218fa4cf3ee52744e.png",
     "static/media/hero_section_my_bzb.webp": "/static/media/hero_section_my_bzb.aa79a1f41904628b86d5.webp",
     "static/media/event_newsletter.webp": "/static/media/event_newsletter.a4b7869536cec07999c1.webp",
     "static/media/blog_detail_splash.webp": "/static/media/blog_detail_splash.3f2772f33436014bf0f4.webp",
@@ -23,7 +24,6 @@
     "static/media/home_ourservice.jpg": "/static/media/home_ourservice.4fc1102144e3fb5924f3.jpg",
     "static/media/mmb_module4.webp": "/static/media/mmb_module4.b94696b4411955eb6271.webp",
     "static/media/jv_banner.webp": "/static/media/jv_banner.58e2fa5afa35c94951ca.webp",
-    "static/media/home_new_founder_section.webp": "/static/media/home_new_founder_section.d33f6709b954aeae252c.webp",
     "static/media/logo_ssu.webp": "/static/media/logo_ssu.88256d52c0db7bbb4f27.webp",
     "static/media/idp_banner.webp": "/static/media/idp_banner.eb5f150727c61ae4ff96.webp",
     "static/media/Our_Project_Kashi_Parekh.webp": "/static/media/Our_Project_Kashi_Parekh.62cceeb87f8bb82c72f4.webp",
@@ -44,6 +44,7 @@
     "static/media/Gallery_intro.webp": "/static/media/Gallery_intro.37d203cda47097a355e5.webp",
     "static/media/mmb_module2.webp": "/static/media/mmb_module2.30add0de22bc5ece43c3.webp",
     "static/media/plan_pricing_intro.webp": "/static/media/plan_pricing_intro.b84063590d4859c0c990.webp",
+    "static/media/user_auth_vector.png": "/static/media/user_auth_vector.ca806e4240b6d1a504ec.png",
     "static/media/bg_idp_new_copy.webp": "/static/media/bg_idp_new_copy.6326b77c18b568c7f83c.webp",
     "static/media/bg_refund_cancellation_new_copy.webp": "/static/media/bg_refund_cancellation_new_copy.c2c2af0f0b08a627bc6a.webp",
     "static/media/registration_form_bg_new_copy.webp": "/static/media/registration_form_bg_new_copy.531ccaa50e25f74fbfc3.webp",
@@ -99,7 +100,6 @@
     "static/media/blog_dummy_logo.png": "/static/media/blog_dummy_logo.d0dec43f9fd225f8556f.png",
     "static/media/company_logo.png": "/static/media/company_logo.d0dec43f9fd225f8556f.png",
     "static/media/blog_post_bg.webp": "/static/media/blog_post_bg.4e035c6ba8dfde289a5a.webp",
-    "static/media/user_auth_vector.webp": "/static/media/user_auth_vector.0fde76891d649c69d73f.webp",
     "static/media/mmb_icon_twelve.webp": "/static/media/mmb_icon_twelve.d730551578bbd0c3e39c.webp",
     "static/media/plan_logo.webp": "/static/media/plan_logo.9dcc5dc7e17e4c6cfb44.webp",
     "static/media/home_banner_bg.webp": "/static/media/home_banner_bg.3ad3186cbee48ee54843.webp",
@@ -221,12 +221,12 @@
     "static/media/chevron_down.webp": "/static/media/chevron_down.f0b57971936cf4eb0cf7.webp",
     "static/media/arrright_white_clr.webp": "/static/media/arrright_white_clr.53b201424c9398b12a77.webp",
     "static/media/privacypolicy_gm.webp": "/static/media/privacypolicy_gm.ae5c2efeb558cdba8edc.webp",
-    "main.cc2a24db.css.map": "/static/css/main.cc2a24db.css.map",
-    "main.8b00a7c5.js.map": "/static/js/main.8b00a7c5.js.map",
+    "main.5bf71483.css.map": "/static/css/main.5bf71483.css.map",
+    "main.e31899bf.js.map": "/static/js/main.e31899bf.js.map",
     "453.150ca95a.chunk.js.map": "/static/js/453.150ca95a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc2a24db.css",
-    "static/js/main.8b00a7c5.js"
+    "static/css/main.5bf71483.css",
+    "static/js/main.e31899bf.js"
   ]
 }

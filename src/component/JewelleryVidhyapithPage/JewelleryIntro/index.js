@@ -10,12 +10,13 @@ const JewelleryIntro = ({isVisible,titleRef}) => {
         >
             <div className="mt-6 max-w-full w-[1296px]">
                 <div className="flex justify-between gap-5 max-lg:flex-col max-md:gap-0 max-lg:flex-col items-center ">
-                    <div className="headwayITIntro flex flex-col w-[50%] max-md:ml-0 max-lg:w-full shadow-2xl shadow-orange-100">
+                    <div className="flex flex-col lg:w-[50%] max-md:ml-0 max-lg:w-full max-md:max-w-full">
                         <img
                             loading="lazy"
                             srcSet={Images.jv_intro}
                             // className="grow w-full shadow-2xl aspect-[1.49] max-md:mt-10 max-md:max-w-full"
-                            className=" shadow-2xl max-md:mt-10 rounded-2xl shadow-orange-100 max-sm:mt-0"
+                            className="grow w-full aspect-[1.49] max-md:mt-10 max-sm:mt-0 max-md:max-w-full rounded-xl"
+                                style={{ boxShadow: '0 0 10px 0 rgba(255, 115, 0, 0.25)' }}
                             alt="Images"
                         />
                     </div>

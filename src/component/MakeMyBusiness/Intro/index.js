@@ -13,7 +13,8 @@ const Intro = ({ titleRef, isVisible }) => {
                             loading="lazy" 
                             // src={Images.make_my_business_intro}
                             src={Images.service_mmb_intro}
-                            className="grow w-full shadow-2xl aspect-[1.49] max-md:mt-5 max-md:max-w-full rounded-xl shadow-orange-100"
+                           className="grow w-full aspect-[1.49] max-md:mt-10 max-sm:mt-0 max-md:max-w-full rounded-xl"
+                                style={{ boxShadow: '0 0 10px 0 rgba(255, 115, 0, 0.25)' }} // custom orange shadow
                             alt="Images"
                         />
                     </div>

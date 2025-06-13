@@ -64,7 +64,7 @@ export { default as startup_bg } from './bg_startup_new_copy.webp';
 // export { default as startup_intro } from './startup_intro.webp';
 export { default as google_logo } from './google_logo.webp';
 export { default as fb_logo } from './fb_logo.webp';
-export { default as user_auth_vector } from './user_auth_vector.webp'; 
+export { default as user_auth_vector } from './user_auth_vector.png'; 
 export { default as close_icon } from './close_icon.webp';
 export { default as blog_into_bg } from './blog_into_bg.webp';
 // export { default as recentblog1 } from './recentblog1.webp';
@@ -122,7 +122,7 @@ export { default as arrow_ui_idb } from './arrow_ui_idb.webp';
 
 
 export { default as home_ourservice } from './home_ourservice.jpg';
-export { default as home_founder_wepb_img } from './home_new_founder_section.webp';
+export { default as home_founder_wepb_img } from './home_new_founder_section.png';
 export { default as Home_banner1 } from './banner-1.webp';
 export { default as Home_banner2 } from './banner-1.webp';
 export { default as Home_banner3 } from './banner-1.webp';
