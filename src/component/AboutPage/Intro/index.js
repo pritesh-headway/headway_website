@@ -25,19 +25,11 @@ const Intro = ({ titleRef, isVisible, data }) => {
                         Introduction
                     </div>
                     <div class="mt-6 text-xl text-zinc-700 max-md:max-w-full">
-                        Welcome to Headway Business Solutions LLP, where innovation meets brilliance in
-                        the world of jewellery business coaching and consulting. As a leading enterprise in
-                        the industry, we are dedicated to guiding jewellery entrepreneurs towards
-                        outstanding success.
+                  With warm welcome we introduce ourselves as ‘Headway Business Solutions LLP’, where innovation meets brilliance for jewellery business coaching and consulting. As a leading consulting firm we take pleasure in dedicating our solution providing guidance to jewellery entrepreneurs towards outstanding success.
                     </div>
                     <div class="mt-6 max-md:max-w-full text-zinc-700">
                         <span class="text-xl leading-6 text-zinc-700">
-                            At Headway, we understand that the jewellery business is not just about beautiful
-                            ornaments; it&#39;s a delicate balance of productive operations, strategic marketing, and
-                            artistic jewellery products. Our seasoned team of experts brings a wealth of
-                            experience to the table, offering tailored solutions that propel your business forward.
-                            Join hands with us; we are committed to achieving lasting success for your
-                            business.
+                            At Headway, we apprehend that the jewellery business is not merely about ornaments; but it's a delicate balance of productive operations, revenue generation by strategic marketing, and effective selling of artistic products. Our seasoned experts bring vast experience on board, offering tailor made solutions that will thrust your business forward.
                         </span>
                     </div>
                 </div>

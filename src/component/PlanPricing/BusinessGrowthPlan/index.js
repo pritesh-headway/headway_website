@@ -468,7 +468,7 @@ const BusinessGrowthPlan = ({ titleRef, isVisible, isModalOpen, setIsModalOpen, 
         {
             id: 1,
             price: '99,000',
-            title1: 'Stay Aware & Alive Renewal Program',
+            title1: 'Stay Aware & Alive Recharge Renewal Program',
             title2: 'Large Scale',
             desc: 'Shine Brighter, Sell Smarter with Headway\'s Individual Development Program',
             onSitePrice: '15,93,000',
@@ -1555,7 +1555,7 @@ const BusinessGrowthPlan = ({ titleRef, isVisible, isModalOpen, setIsModalOpen, 
                     >
                         <span className=" leading-[58px] text-zinc-800"
 
-                        >Stay Aware & Alive Renewal</span>{" "}
+                        >Stay Aware & Alive Recharge Renewal</span>{" "}
 
                         <span className="font-bold text-orange-500 leading-[58px]">
                             Program

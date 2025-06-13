@@ -19,7 +19,7 @@ const Headway = ({ titleRef, isVisible }) => {
                             // className="text-5xl font-medium max-md:max-w-full max-md:text-4xl"
                             className={`text-start text-5xl font-medium max-md:max-w-full max-md:text-4xl ${isVisible ? 'about-us_title_animation_fade_in_right' : ''}`}
                             >
-                                <span className=" leading-[58px]">Why Choose</span>{" "}
+                                <span className=" leading-[58px]">Why designate</span>{" "}
                                 <span className="font-bold text-orange-500 leading-[58px]">
                                     Headway Business Solutions LLP?
                                 </span>
@@ -41,10 +41,7 @@ const Headway = ({ titleRef, isVisible }) => {
                                                 Distinctive Industry Expertise:
                                             </div>
                                             <div className="self-stretch mt-3 text-lg text-center text-zinc-600">
-                                                At Headway Business Solutions LLP, we bring to
-                                                the table a depth of knowledge and experience that is unmatched in the industry.
-                                                This wealth of expertise allows us to provide our clients with insights, strategies, and
-                                                solutions that are not only effective but also ahead of the curve.
+                                                At Headway Business Solutions LLP, we bring to the table a depth of knowledge and experience that is unmatched in the industry. This wealth of expertise allows us to provide our clients with insights, strategies, and solutions that are not only effective but also ahead of the curve.
                                             </div>
                                         </div>
                                     </div>
@@ -59,14 +56,10 @@ const Headway = ({ titleRef, isVisible }) => {
                                                 />
                                             </div>
                                             <div className="mt-6 text-2xl font-medium text-center  text-zinc-800">
-                                                Tailored Strategies for Your Success:
+                                                Customised Strategies for Your Success:
                                             </div>
                                             <div className="self-stretch mt-3 text-lg text-center text-zinc-600">
-                                                We understand that each jewellery
-                                                business has its own set of challenges and opportunities. That&#39;s why we emphasize
-                                                personalized strategies that are specifically designed to meet your unique needs and
-                                                objectives. Our approach is not one-size-fits-all; it&#39;s a solution that aims to elevate
-                                                your business in every aspect.
+                                                We comprehend that each jewellery business has its own set of challenges and opportunities. Consequently we emphasise on personalized strategies that are specifically designed to meet your unique needs and objectives. Our approach is not one-size-fits-all; on the other hand it's an adaptation of series of resolutions that aims to elevate your business in every aspect.
                                             </div>
                                         </div>
                                     </div>
@@ -84,11 +77,7 @@ const Headway = ({ titleRef, isVisible }) => {
                                                 Comprehensive Service Offerings:
                                             </div>
                                             <div className="self-stretch mt-3 text-lg text-center text-zinc-600">
-                                                From startups to established enterprises,
-                                                our range of services caters to every facet of the jewellery business. Whether it&#39;s
-                                                operational optimization, market expansion, brand development, or financial
-                                                advisory, Headway Business Solutions stands as a one-stop shop for all your
-                                                consulting needs.
+                                                From start-up to established enterprises, our range of services caters to every characteristic of the jewellery business. Whether it's operational optimization, market expansion, brand development, or financial advisory, Headway Business Solutions stands as an Ultimate Hub for all your consulting desires.
                                             </div>
                                         </div>
                                     </div>
@@ -106,11 +95,7 @@ const Headway = ({ titleRef, isVisible }) => {
                                                 Proven Track Record of Success:
                                             </div>
                                             <div className="self-stretch mt-3 text-lg text-center text-zinc-600">
-                                                Our history speaks volumes. Since our
-                                                inception, we have consistently broken our own records of success, helping
-                                                numerous businesses within the gold, silver, diamond, and gem jewellery sectors to
-                                                thrive. Our clients&#39; achievements are a testament to our effective methodologies and
-                                                the positive impact we have on their businesses.
+                                                Our history speaks volumes. Since our inception, we have consistently broken our own records of success, helping numerous businesses within the gold, silver, diamond, and gem jewellery sectors to thrive. Our clients' achievements are a testament to our effective methodologies and the positive impact we have envisaged on their businesses.
                                             </div>
                                         </div>
                                     </div>

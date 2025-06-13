@@ -259,149 +259,132 @@ const ClientSay = ({ titleRef, isVisible, data }) => {
                 </div>
 
                 {/* <div className='border border-blue-500'> */}
-                    <Slider
-                        {...settings}
-                        ref={slider => {
-                            sliderRef = slider;
-                        }}>
-                        {data?.length > 0 ? (
-                            data.map((item, index) => (
-                                <div className="text-start h-full flex items-center justify-center z-10 gap-5 justify-between px-3 mt-0 max-md:flex-wrap max-md:max-w-full rounded-lg max-sm:mb-0 mb-5"
+                <Slider
+                    {...settings}
+                    ref={slider => {
+                        sliderRef = slider;
+                    }}>
+                    {data?.length > 0 ? (
+                        data.map((item, index) => (
+                            <div className="text-start h-full flex items-center justify-center z-10 gap-5 justify-between px-3 mt-0 max-md:flex-wrap max-md:max-w-full rounded-lg max-sm:mb-0 mb-5"
+                                key={index}
+                            >
+
+                                <div className="flex flex-col max-md:ml-0 max-md:w-full">
+                                    <div
+                                        className="flex flex-col grow p-8 mx-auto w-full self-stretch h-[400px] bg-white  rounded-2xl shadow-2xl shadow-orange-100 max-md:pl-5 max-md:mt-8"
+                                    //  className="flex flex-col grow p-8 mx-auto w-full self-stretch bg-white  rounded-2xl shadow-2xl shadow-orange-100 max-md:pl-5 max-md:mt-8"
+                                    >
+                                        <div className="flex gap-3 justify-between">
+                                            <img
+                                                loading="lazy"
+                                                // src={item.imageUrl}
+                                                src={item?.image}
+                                                className="w-16 h-14 aspect-square"
+                                                alt={item?.name}
+                                            />
+                                            <div className="flex flex-col flex-1 grow">
+                                                <div className="text-base font-medium leading-6 text-zinc-800">
+                                                    {item?.name}
+                                                </div>
+                                                <div className="mt-1 text-sm leading-5 text-neutral-400" >
+                                                    {item?.location}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="mt-2 text-base text-zinc-600 flex-1 grow">
+                                            {item?.comment}
+                                        </div>
+                                        <div className="flex gap-1 mt-2 max-w-full w-[136px]">
+                                            <img
+                                                loading="lazy"
+                                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec8c8becf07ced6d792269411af550471a0bbb0eb0e59466349369fe249d5c6f?apiKey=8e5983036f284a13866aae97819cdb73&"
+                                                className="flex-1 shrink-0 w-full aspect-square"
+                                                alt=''
+                                            />
+                                            <img
+                                                loading="lazy"
+                                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec8c8becf07ced6d792269411af550471a0bbb0eb0e59466349369fe249d5c6f?apiKey=8e5983036f284a13866aae97819cdb73&"
+                                                className="flex-1 shrink-0 w-full aspect-square"
+                                                alt=''
+                                            />
+                                            <img
+                                                loading="lazy"
+                                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec8c8becf07ced6d792269411af550471a0bbb0eb0e59466349369fe249d5c6f?apiKey=8e5983036f284a13866aae97819cdb73&"
+                                                className="flex-1 shrink-0 w-full aspect-square"
+                                                alt=''
+                                            />
+                                            <img
+                                                loading="lazy"
+                                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec8c8becf07ced6d792269411af550471a0bbb0eb0e59466349369fe249d5c6f?apiKey=8e5983036f284a13866aae97819cdb73&"
+                                                className="flex-1 shrink-0 w-full aspect-square"
+                                                alt=''
+                                            />
+                                            <img
+                                                loading="lazy"
+                                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec8c8becf07ced6d792269411af550471a0bbb0eb0e59466349369fe249d5c6f?apiKey=8e5983036f284a13866aae97819cdb73&"
+                                                className="flex-1 shrink-0 w-full aspect-square"
+                                                alt=''
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))
+                    )
+                        : (
+                            companyImg.map((item, index) => (
+                                <div className=" h-full flex z-10 gap-5 justify-between px-3 mt-0 max-md:flex-wrap max-md:max-w-full rounded-lg mb-10 max-sm:mb-0"
                                     key={index}
                                 >
 
-                                    <div className="flex flex-col max-md:ml-0 max-md:w-full">
-                                        <div 
-                                        className="flex flex-col grow p-8 mx-auto w-full self-stretch h-[400px] bg-white  rounded-2xl shadow-2xl shadow-orange-100 max-md:pl-5 max-md:mt-8"
-                                     //  className="flex flex-col grow p-8 mx-auto w-full self-stretch bg-white  rounded-2xl shadow-2xl shadow-orange-100 max-md:pl-5 max-md:mt-8"
-                                       >
+                                    <div className="flex flex-col max-md:ml-0 max-md:w-full ">
+                                        <div className="flex flex-col grow self-stretch p-8 mx-auto w-full bg-white rounded-2xl shadow-2xl shadow-orange-50 max-md:pl-5 max-md:mt-8">
                                             <div className="flex gap-3 justify-between">
                                                 <img
                                                     loading="lazy"
-                                                    // src={item.imageUrl}
-                                                    src={item?.image}
-                                                    className="w-16 h-14 aspect-square"
-                                                    alt={item?.name}
+                                                    src={item.imageUrl}
+
+                                                    // srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/1849dff81c30016140e2c23a4bd99fe9224769a4733e249d47d75ac297f885bf?apiKey=8e5983036f284a13866aae97819cdb73&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/1849dff81c30016140e2c23a4bd99fe9224769a4733e249d47d75ac297f885bf?apiKey=8e5983036f284a13866aae97819cdb73&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/1849dff81c30016140e2c23a4bd99fe9224769a4733e249d47d75ac297f885bf?apiKey=8e5983036f284a13866aae97819cdb73&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/1849dff81c30016140e2c23a4bd99fe9224769a4733e249d47d75ac297f885bf?apiKey=8e5983036f284a13866aae97819cdb73&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/1849dff81c30016140e2c23a4bd99fe9224769a4733e249d47d75ac297f885bf?apiKey=8e5983036f284a13866aae97819cdb73&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/1849dff81c30016140e2c23a4bd99fe9224769a4733e249d47d75ac297f885bf?apiKey=8e5983036f284a13866aae97819cdb73&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/1849dff81c30016140e2c23a4bd99fe9224769a4733e249d47d75ac297f885bf?apiKey=8e5983036f284a13866aae97819cdb73&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/1849dff81c30016140e2c23a4bd99fe9224769a4733e249d47d75ac297f885bf?apiKey=8e5983036f284a13866aae97819cdb73&"
+                                                    className="w-12 aspect-square"
+                                                    alt='Image'
                                                 />
-                                                <div className="flex flex-col flex-1 grow">
+                                                <div className="flex flex-col flex-1">
                                                     <div className="text-base font-medium leading-6 text-zinc-800">
                                                         {item?.name}
                                                     </div>
-                                                    <div className="mt-1 text-sm leading-5 text-neutral-400" >
-                                                        {item?.location} 
+                                                    <div className="mt-1 text-sm leading-5 text-neutral-400">
+                                                        {item?.title}
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="mt-2 text-base text-zinc-600 flex-1 grow">
-                                                {item?.comment}
+                                            <div className="mt-5 text-base text-zinc-600">
+                                                {item?.description}
                                             </div>
                                             <div className="flex gap-1 mt-2 max-w-full w-[136px]">
-                                                <img
-                                                    loading="lazy"
-                                                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec8c8becf07ced6d792269411af550471a0bbb0eb0e59466349369fe249d5c6f?apiKey=8e5983036f284a13866aae97819cdb73&"
-                                                    className="flex-1 shrink-0 w-full aspect-square"
-                                                    alt=''
-                                                />
-                                                <img
-                                                    loading="lazy"
-                                                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec8c8becf07ced6d792269411af550471a0bbb0eb0e59466349369fe249d5c6f?apiKey=8e5983036f284a13866aae97819cdb73&"
-                                                    className="flex-1 shrink-0 w-full aspect-square"
-                                                    alt=''
-                                                />
-                                                <img
-                                                    loading="lazy"
-                                                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec8c8becf07ced6d792269411af550471a0bbb0eb0e59466349369fe249d5c6f?apiKey=8e5983036f284a13866aae97819cdb73&"
-                                                    className="flex-1 shrink-0 w-full aspect-square"
-                                                    alt=''
-                                                />
-                                                <img
-                                                    loading="lazy"
-                                                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec8c8becf07ced6d792269411af550471a0bbb0eb0e59466349369fe249d5c6f?apiKey=8e5983036f284a13866aae97819cdb73&"
-                                                    className="flex-1 shrink-0 w-full aspect-square"
-                                                    alt=''
-                                                />
-                                                <img
-                                                    loading="lazy"
-                                                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec8c8becf07ced6d792269411af550471a0bbb0eb0e59466349369fe249d5c6f?apiKey=8e5983036f284a13866aae97819cdb73&"
-                                                    className="flex-1 shrink-0 w-full aspect-square"
-                                                    alt=''
-                                                />
+                                                {[...Array(5)].map((_, i) => (
+                                                    <img
+                                                        key={i}
+                                                        loading="lazy"
+                                                        src={
+                                                            i < (item.rating || 0)
+                                                                ? "https://cdn.builder.io/api/v1/image/assets/TEMP/ec8c8becf07ced6d792269411af550471a0bbb0eb0e59466349369fe249d5c6f?apiKey=8e5983036f284a13866aae97819cdb73&" // filled star
+                                                                : "https://cdn.builder.io/api/v1/image/assets/TEMP/empty-star.png" // empty star (replace with your empty star image)
+                                                        }
+                                                        className="flex-1 shrink-0 w-full aspect-square"
+                                                        alt={i < (item.rating || 0) ? 'Filled star' : 'Empty star'}
+                                                    />
+                                                ))}
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             ))
+
                         )
-                            : (
-                                companyImg.map((item, index) => (
-                                    <div className=" h-full flex z-10 gap-5 justify-between px-3 mt-0 max-md:flex-wrap max-md:max-w-full rounded-lg mb-10 max-sm:mb-0"
-                                        key={index}
-                                    >
+                    }
 
-                                        <div className="flex flex-col max-md:ml-0 max-md:w-full ">
-                                            <div className="flex flex-col grow self-stretch p-8 mx-auto w-full bg-white rounded-2xl shadow-2xl shadow-orange-50 max-md:pl-5 max-md:mt-8">
-                                                <div className="flex gap-3 justify-between">
-                                                    <img
-                                                        loading="lazy"
-                                                        src={item.imageUrl}
-
-                                                        // srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/1849dff81c30016140e2c23a4bd99fe9224769a4733e249d47d75ac297f885bf?apiKey=8e5983036f284a13866aae97819cdb73&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/1849dff81c30016140e2c23a4bd99fe9224769a4733e249d47d75ac297f885bf?apiKey=8e5983036f284a13866aae97819cdb73&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/1849dff81c30016140e2c23a4bd99fe9224769a4733e249d47d75ac297f885bf?apiKey=8e5983036f284a13866aae97819cdb73&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/1849dff81c30016140e2c23a4bd99fe9224769a4733e249d47d75ac297f885bf?apiKey=8e5983036f284a13866aae97819cdb73&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/1849dff81c30016140e2c23a4bd99fe9224769a4733e249d47d75ac297f885bf?apiKey=8e5983036f284a13866aae97819cdb73&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/1849dff81c30016140e2c23a4bd99fe9224769a4733e249d47d75ac297f885bf?apiKey=8e5983036f284a13866aae97819cdb73&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/1849dff81c30016140e2c23a4bd99fe9224769a4733e249d47d75ac297f885bf?apiKey=8e5983036f284a13866aae97819cdb73&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/1849dff81c30016140e2c23a4bd99fe9224769a4733e249d47d75ac297f885bf?apiKey=8e5983036f284a13866aae97819cdb73&"
-                                                        className="w-12 aspect-square"
-                                                        alt='Image'
-                                                    />
-                                                    <div className="flex flex-col flex-1">
-                                                        <div className="text-base font-medium leading-6 text-zinc-800">
-                                                            {item?.name}
-                                                        </div>
-                                                        <div className="mt-1 text-sm leading-5 text-neutral-400">
-                                                            {item?.title}
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="mt-5 text-base text-zinc-600">
-                                                    {item?.description}
-                                                </div>
-                                                <div className="flex gap-1 mt-5 max-w-full w-[136px]">
-                                                    <img
-                                                        loading="lazy"
-                                                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec8c8becf07ced6d792269411af550471a0bbb0eb0e59466349369fe249d5c6f?apiKey=8e5983036f284a13866aae97819cdb73&"
-                                                        className="flex-1 shrink-0 w-full aspect-square"
-                                                        alt=''
-                                                    />
-                                                    <img
-                                                        loading="lazy"
-                                                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec8c8becf07ced6d792269411af550471a0bbb0eb0e59466349369fe249d5c6f?apiKey=8e5983036f284a13866aae97819cdb73&"
-                                                        className="flex-1 shrink-0 w-full aspect-square"
-                                                        alt=''
-                                                    />
-                                                    <img
-                                                        loading="lazy"
-                                                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec8c8becf07ced6d792269411af550471a0bbb0eb0e59466349369fe249d5c6f?apiKey=8e5983036f284a13866aae97819cdb73&"
-                                                        className="flex-1 shrink-0 w-full aspect-square"
-                                                        alt=''
-                                                    />
-                                                    <img
-                                                        loading="lazy"
-                                                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec8c8becf07ced6d792269411af550471a0bbb0eb0e59466349369fe249d5c6f?apiKey=8e5983036f284a13866aae97819cdb73&"
-                                                        className="flex-1 shrink-0 w-full aspect-square"
-                                                        alt=''
-                                                    />
-                                                    <img
-                                                        loading="lazy"
-                                                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec8c8becf07ced6d792269411af550471a0bbb0eb0e59466349369fe249d5c6f?apiKey=8e5983036f284a13866aae97819cdb73&"
-                                                        className="flex-1 shrink-0 w-full aspect-square"
-                                                        alt=''
-                                                    />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                ))
-
-                            )
-                        }
-
-                    </Slider>
+                </Slider>
                 {/* </div> */}
             </div>
         </>

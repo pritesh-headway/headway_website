@@ -37,20 +37,13 @@ const Training = ({ titleRef, isVisible ,data}) => {
                                 // className="text-5xl text-zinc-800 max-md:max-w-full max-md:text-4xl"
                                 className={`text-5xl text-zinc-800 max-md:max-w-full max-md:text-4xl ${isVisible ? 'animation_fadeInRight1' : ''}`}
                                 >
-                                    Transform Your Jewellery Business with Headway&#39;s Expert
-                                    Training Programs
+                                    Transform Your Jewellery Business with Headway's Expert Training Programs
                                 </div>
                                 <div className="mt-6 max-md:max-w-full">
-                                    Headway Business Solutions LLP stands as a beacon of growth and success in the
-                                    jewellery business world, thanks to our in-depth training programs. We&#39;re dedicated
-                                    to boosting the capabilities of jewellery stores, offering them essential skills, strategic
-                                    insights, and specialized knowledge to flourish.
+                                    Headway Business Solutions LLP stands as a torch bearer & beacon of growth and success in the jewellery business world, thanks to our in-depth training programs. We're dedicated to enhance the capabilities of jewellery stores, offering them essential skills, strategic insights, and specialized knowledge to flourish.
                                 </div>
                                 <div className="mt-6 max-md:max-w-full ">
-                                    Our training is designed to support both emerging and established businesses,
-                                    equipping them with the necessary tools to stand out in the competitive jewellery
-                                    market. At Headway, we&#39;re more than just a resource for training; we&#39;re a committed
-                                    partner, ready to guide your jewellery business towards enduring success.
+                                    Our training is designed to support both emerging and established businesses, equipping them with the necessary tools to stand out in the modest jewellery market. At Headway, we're more than just a resource for training; we're a unwavering partner, organised to guide your jewellery business towards enduring success.
                                 </div>
                                 {/* <div className="justify-center self-start px-6 py-3.5 mt-6 text-base text-white whitespace-nowrap bg-orange-500 rounded shadow-2xl max-md:px-5">
                                     Learn more
