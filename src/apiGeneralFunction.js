@@ -1,6 +1,6 @@
 import CustomAlert from "./component/ReusableComp/CustomAlert";
 
-export const BASE_URL = 'https://admin.headway.org.in/api/v1'; 
+export const BASE_URL = 'https://admin.headway.org.in/api/v1';
 // const BASE_URL =  'http://192.168.1.6/headway/public';
 // const BASE_URL =  '/headway-admin/public/api/v1';
 
@@ -22,7 +22,7 @@ export const fetchData = async (endpoint, token = null) => {
     //     // throw new Error('No internet connection');
     //     //   alert('No internet connection');
     //       return <CustomAlert message="No internet connection" />;
-       
+
     // }
     const url = `${BASE_URL}/${endpoint}`;
     const headers = token ? { 'Authorization': `Bearer ${token}` } : {};
@@ -33,7 +33,7 @@ export const fetchData = async (endpoint, token = null) => {
         }
         return await handleResponse(response);
     } catch (error) {
-      //  console.error('Error:', error);
+        //  console.error('Error:', error);
         throw error;
     }
 
@@ -41,7 +41,7 @@ export const fetchData = async (endpoint, token = null) => {
     //     .then(handleResponse)
     //     .catch(error => console.error('Error:', error));
 };
- 
+
 export const addData = async (endpoint, data, token = null) => {
     const url = `${BASE_URL}/${endpoint}`;
     const headers = token ? { 'Authorization': `Bearer  ${token}` } : {};
@@ -55,8 +55,8 @@ export const addData = async (endpoint, data, token = null) => {
     })
         .then(handleResponse)
         .catch(
-         //  error => console.error('Error:', error)
-            );
+        //  error => console.error('Error:', error)
+    );
 };
 
 export const deleteData = async (endpoint, id, token = null) => {
@@ -69,8 +69,8 @@ export const deleteData = async (endpoint, id, token = null) => {
         .then(handleResponse)
         .catch(
             error => console.error('Error:', error)
-            );
-};   
+        );
+};
 
 export const updateData = async (endpoint, id, newData, token = null) => {
     const url = `${BASE_URL}/${endpoint}/${id}`;
@@ -85,9 +85,9 @@ export const updateData = async (endpoint, id, newData, token = null) => {
     })
         .then(handleResponse)
         .catch(
-            // error => 
-            // console.error('Error:', error)
-            );
+        // error => 
+        // console.error('Error:', error)
+    );
 };
 
 
@@ -110,7 +110,7 @@ export const fetchWithFormData = async (endpoint, formData, token = null) => {
         const result = await response.json();
         return result;
     } catch (error) {
-       // console.error(error);
+        // console.error(error);
         throw error;
     }
 };
@@ -118,18 +118,23 @@ export const fetchWithFormData = async (endpoint, formData, token = null) => {
 
 export const fetchWithFormDataToken = async (endpoint, formdata, token = null) => {
     const url = `${BASE_URL}/${endpoint}`;
-    
+
     try {
         // const headers = { 'Authorization': `Bearer ${token}` }  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vNTQuMTk2LjIzNC43Ni9hcGkvbG9naW4iLCJpYXQiOjE3MTIxNDc3NjcsImV4cCI6MTcxMjIzNDE2NywibmJmIjoxNzEyMTQ3NzY3LCJqdGkiOiJVSXN6S3pyUVROdTY3YU5nIiwic3ViIjoiMzAiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.lixXeNsAMh3812GU5-Pwpwj5YCSxblaou2V3Iomm1iY
         // const headers = { 'Authorization': `Bearer ${token}` } 
         //  const headers = token ? { token: token } : {}; 
         const headers = token ? { 'Authorization': `Bearer  ${token}` } : {};
-        
+
 
         const requestOptions = {
             method: "POST",
             body: formdata,
-            headers: headers, // Include headers in the request options
+            headers: {
+                ...headers, 'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': 'https://headway.org.in',
+                'Access-Control-Allow-Headers': 'Origin, Content-Type, Authorization, X-Requested-With',
+                'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, DELETE, PUT'
+            }, // Include headers in the request options
             redirect: "follow"
         };
 
@@ -144,7 +149,7 @@ export const fetchWithFormDataToken = async (endpoint, formdata, token = null) =
 
 export const fetchDataWithToken = async (endpoint, token = null,) => {
 
- 
+
 
     // if (!token && navigateToLogin) {
     //     window.location.href = '/login'; 
@@ -153,7 +158,7 @@ export const fetchDataWithToken = async (endpoint, token = null,) => {
     // }
 
     const url = `${BASE_URL}/${endpoint}`;
-    const headers = { 'Authorization': `Bearer ${token}` } ;
+    const headers = { 'Authorization': `Bearer ${token}` };
     try {
         const response = await fetch(url, { headers });
         if (!response.ok) {
@@ -170,7 +175,7 @@ export const fetchWithFormDataWithoutBody = async (endpoint, token = null) => {
     const url = `${BASE_URL}/${endpoint}`;
 
     try {
-        const headers = { 'Authorization': `Bearer ${token}`};
+        const headers = { 'Authorization': `Bearer ${token}` };
 
         const requestOptions = {
             method: "POST",
@@ -182,7 +187,7 @@ export const fetchWithFormDataWithoutBody = async (endpoint, token = null) => {
         const result = await response.json();
         return result;
     } catch (error) {
-//console.error(error);
+        //console.error(error);
         throw error;
     }
 };
